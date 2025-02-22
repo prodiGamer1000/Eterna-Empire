@@ -1,0 +1,26 @@
+body{
+    height: 97vh;
+    width: 98vw;
+}
+*{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+title{
+    display: none;
+}
+h1{
+    flex-direction: row;
+}
+img{
+    height: 13vh;
+}
+a{
+    color: white;
+    background-color: #FF69B4;
+    text-decoration: none;
+    border-radius: 5%;
+    padding: 5px;
+}
