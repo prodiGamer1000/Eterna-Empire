@@ -15,7 +15,8 @@ function toggleTheme() {
     }
 } 
 
-
+sun.addEventListener('click', ()=>{toggleTheme();});
+moon.addEventListener('click', ()=>{toggleTheme()});
 
 setInterval(()=>{
     

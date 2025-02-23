@@ -2,6 +2,8 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    transition: all 0.2s ease;
 }
 title{
     display: none;
@@ -59,4 +61,13 @@ a{
 }
 li{
     list-style: none;
+}
+.moon:active{
+    opacity: 0.5;
+}
+.sun:active{
+    opacity: 0.5;
+}
+.moon{
+    display: none;
 }
