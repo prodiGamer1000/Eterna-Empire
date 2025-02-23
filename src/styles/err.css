@@ -1,11 +1,11 @@
 body{
     height: 97vh;
     width: 98vw;
+    display: flex;
 }
 *{
     align-items: center;
     justify-content: center;
-    display: flex;
     flex-direction: column;
 }
 title{
@@ -13,11 +13,14 @@ title{
 }
 h1{
     flex-direction: row;
+    display: flex;
 }
 img{
     height: 13vh;
+    display: flex;
 }
 a{
+    display: flex;
     color: white;
     background-color: #FF69B4;
     text-decoration: none;
