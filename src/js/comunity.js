@@ -1,8 +1,8 @@
 const sun = document.querySelector('.sun');
 const moon = document.querySelector('.moon');
 const main = document.querySelector('.main');
-const description = document.querySelector('.description');
-const title = document.querySelector('.descriptionTitle');
+const description = document.querySelector('.comunityDesc');
+const title = document.querySelector('.comunityTitle');
 
 let theme = "dark";
 
@@ -23,12 +23,12 @@ moon.addEventListener('click', ()=>{toggleTheme()});
 
 setInterval(()=>{
     if(theme == "light"){
-        title.style.color = '#000'
+        title.style.color = "#000"
         description.style.backgroundColor = "#ddd";
         description.style.color = "#000";
         main.style.backgroundColor = "#f2f2f2";
     } else {
-        title.style.color = '#fff'
+        title.style.color = "#fff"
         description.style.backgroundColor = "#444";
         description.style.color = "#fff";
         main.style.backgroundColor = "#222";

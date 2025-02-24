@@ -9,9 +9,11 @@ title{
     display: none;
 }
 .menu{
-    gap: 5px;
+    gap: 10px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: 100%;
 }
 body{
     overflow-x: hidden;
@@ -110,6 +112,7 @@ main{
     margin-left: 10px;
 }
 .descriptionTitle{
+    color: #fff ;
     margin: 20px;
     font-size: 24px;
     font-weight: bold;
@@ -127,4 +130,80 @@ main{
     color: #fff;
     display: flex;
     flex-direction: column;
+}
+.theme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuActive{
+    background-color: #fff;
+    color: #800;
+}
+.menu a{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+nav{
+    height: 100%;
+}
+.menu a:hover{
+    background-color: #fff;
+    color: #800;
+}
+.areas div{
+    cursor: pointer;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #800;
+    color: #fff;
+    border-radius: 5%;
+}
+.comunityDesc{
+    margin: 50px;
+    border-radius: 1%;
+    padding: 20px;
+    box-shadow: 0 0 10px #333;
+    background-color: #444;
+    width: 75vw;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.comunityTitle{
+    color: #fff ;
+    margin-top: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.areas{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.groupsImage{
+    background-image: url("../images/Grupo.png");
+}
+.worldImage{
+    background-image: url("../images/Mundo.png");
+}
+.friendsImage{
+    background-image: url("../images/Amigo.png");
+}
+.areas div div{
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
