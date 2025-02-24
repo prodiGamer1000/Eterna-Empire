@@ -7,8 +7,11 @@ const description = document.querySelector('.description');
 const title = document.querySelector('.descriptionTitle');
 const menuMobile = document.querySelector('.menuMobile');
 const menuMobileOpen = document.querySelector('.menuMobileOpen');
+const sunMobile = document.querySelector('.sunMobile');
+const moonMobile = document.querySelector('.moonMobile');
 
 let theme = "dark";
+let themeMobile = "dark";
 let menuMobilePressed = false;
 
 function toggleTheme() {
@@ -22,9 +25,24 @@ function toggleTheme() {
         sun.style.display = "none";
     }
 } 
+function toggleThemeMobile(){
+    if(themeMobile == "light") {
+        themeMobile = "dark"
+        moonMobile.style.display = "none";
+        sunMobile.style.display = "block";
+    } else {
+        themeMobile = "light"
+        moonMobile.style.display = "block";
+        sunMobile.style.display = "none";
+    }
+}
 
-sun.addEventListener('click', ()=>{toggleTheme();});
+
+sun.addEventListener('click', ()=>{toggleTheme()});
 moon.addEventListener('click', ()=>{toggleTheme()});
+
+sunMobile.addEventListener('click', ()=>{toggleThemeMobile()});
+moonMobile.addEventListener('click', ()=>{toggleThemeMobile()});
 
 setInterval(()=>{
     if(theme == "light"){
@@ -51,3 +69,4 @@ menuMobile.addEventListener('click', ()=>{
         menuMobilePressed = true;
     }
 });
+

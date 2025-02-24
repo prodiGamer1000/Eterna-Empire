@@ -104,9 +104,13 @@ main{
 .carrossel{
     margin-bottom: 80px;
     background-color: #444;
-    width: 100vw;
+    width: 98vw;
     height: 400px;
-    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; 
 }
 .copy, .managers, .creators{
     margin-left: 10px;
@@ -213,11 +217,21 @@ nav{
 .menuMobileOpen{
     display: none;
 }
-
-
+.sunMobile{
+    display: none;
+}
+.moonMobile{
+    display: none;
+}
+.seta:active{
+    opacity: 0.5;
+}
 
 
 @media (max-width:450px) and (max-height:900px){
+    *{
+        transition:all 0.05s ease;
+    }
     .menuMobile{
         display: block;
     }
@@ -276,5 +290,26 @@ nav{
         justify-content: flex-start;
         flex-direction:row-reverse ;
         width: 100%;
+    }
+    .sunMobile{
+        display: block;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .moonMobile{
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .moonMobile:active{
+        opacity: 0.5;
+    }
+    .sunMobile:active{
+        opacity: 0.5;
+    }
+    .carrossel{
+        height: 200px;
+        padding: 0;
     }
 }
