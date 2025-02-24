@@ -207,3 +207,74 @@ nav{
     background-size: contain;
     background-repeat: no-repeat;
 }
+.menuMobile{
+    display: none;
+}
+.menuMobileOpen{
+    display: none;
+}
+
+
+
+
+@media (max-width:450px) and (max-height:900px){
+    .menuMobile{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logoImage{
+        width: 65px;
+        height: 65px;
+    }
+    .logoName div{
+        font-size: 23px;
+    }
+    .ninguem{
+        display: none;
+    }
+    body{
+        overflow-x: hidden
+    }
+    .menuMobileOpen{
+        display: none;
+        flex-direction: column;
+    }
+    .menuMobileItem{
+        padding: 15px 10px;
+        background-color: #800;
+        color: #fff;
+        border-bottom: 1px solid #444;
+        border-top: 1px solid #444;
+        cursor: pointer;
+    }
+    .menuActive{
+        background-color: #fff;
+        color: #800;
+    }
+    .menuMobileItem:active{
+        background-color: #fff;
+        color: #800;
+    }
+    .menuMobileOthers{
+        background-color: #800;
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 10px;
+        border-top: 1px solid #444;
+        border-bottom: 2px solid #000;
+
+    }
+    .theme{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction:row-reverse ;
+        width: 100%;
+    }
+}
