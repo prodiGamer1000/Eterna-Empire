@@ -226,6 +226,49 @@ nav{
 .seta:active{
     opacity: 0.5;
 }
+.wikiTitle{
+    color: #fff ;
+    margin-top: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.wikiDesc{
+    margin: 50px;
+    border-radius: 1%;
+    padding: 20px;
+    box-shadow: 0 0 10px #333;
+    background-color: #444;
+    width: 75vw;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.wikiAreas{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+}
+.wikiAreas div{
+    width: 800px;
+    height: 150px;
+}
+.wikiAreas div:hover{
+    opacity: 0.9;
+    box-shadow: 0 0 20px #333;
+}
+
+.wikiAreas div:active{
+    opacity: 0.6;
+}
+
+
+
+
 
 
 @media (max-width:450px) and (max-height:900px){
