@@ -74,7 +74,7 @@ svg{
 }
 main{
     margin: auto;
-    background-color: #444;
+    background-color: #333;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -113,6 +113,7 @@ li{
     margin-top: 70px;
     display: none;
     flex-direction: column;
+    border: 1px solid #222;
 }
 .menuItem{
     padding: 15px 10px;
@@ -164,10 +165,20 @@ input{
     gap: 5px;
     flex-direction: row;
 }
+.loginGoogle:hover{
+    opacity: 0.8;
+    box-shadow: 0 0 10px #444;
+}
+.loginGoogle:active{
+    opacity: 0.5;
+}
 .esqueceuSenha{
     color: #fff;
     text-decoration: underline;
     text-align: center;
+}
+.esqueceuSenha:hover{
+    color: #bbb;
 }
 .signIn{
     border-radius: 5px;
@@ -183,4 +194,30 @@ input{
     align-items: center;
     gap: 5px;
     flex-direction: row;
+}
+.signIn:hover{
+    opacity: 0.8;
+    box-shadow: 0 0 10px #444;
+}
+.signIn:active{
+    opacity: 0.5;
+}
+.login{
+    cursor: pointer;
+    padding: 5px 0;
+}
+.login:hover{
+    opacity: 0.9;
+    box-shadow: 0 0 10px #444;
+}
+.login:active{
+    opacity: 0.5;
+}
+label{
+    margin-left: 3px;
+}
+.theme{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
 }
