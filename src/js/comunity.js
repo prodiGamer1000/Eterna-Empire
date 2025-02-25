@@ -1,4 +1,4 @@
-alert("AVISO!! O site ainda está em desenvolvieno, portanto, algumas funções que funcionam em computadores podem não funcionar devidamente em celulares.");
+//alert("AVISO!! O site ainda está em desenvolvieno, portanto, algumas funções que funcionam em computadores podem não funcionar devidamente em celulares.");
 
 const sun = document.querySelector('.sun');
 const moon = document.querySelector('.moon');
