@@ -1,0 +1,186 @@
+*{
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+title{
+    display: none;
+}
+body{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    background-image: url('../images/imagem_3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #800;
+    color: #fff;
+    flex-direction: row;
+    padding: 0 25px;
+}
+.logoImage{
+    background-image: url("../images/icon.png");
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    border-radius: 50%;
+}
+.logo{
+    gap: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.logoName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer{
+    background-color: #800;
+    color: #fff;
+    justify-content: space-between;
+    padding: 20px ;
+}
+svg{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.moon:active{
+    opacity: 0.5;
+}
+.sun:active{
+    opacity: 0.5;
+}
+.moon{
+    display: none;
+}
+.google{
+    width: 20px;
+    height: 20px;
+
+}
+main{
+    margin: auto;
+    background-color: #444;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #fff;
+}
+li{
+    list-style: none;
+}
+.loginForm h1{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.menuOpen{
+    width: 50px;
+    height: 50px;
+}
+.menu{
+    width: 150px;
+    position: fixed;
+    right: 0;
+    margin-top: 70px;
+    display: none;
+    flex-direction: column;
+}
+.menuItem{
+    padding: 15px 10px;
+    background-color: #800;
+    color: #fff;
+    border-bottom: 1px solid #444;
+    border-top: 1px solid #444;
+    cursor: pointer;
+}
+.menuActive{
+    background-color: #fff;
+    color: #800;
+}
+.menuItem:hover{
+    background-color: #fff;
+    color: #800;
+}
+.menuOthers{
+    background-color: #800;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px;
+    border-top: 1px solid #444;
+    border-bottom: 2px solid #000;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+input{
+    border-radius: 5px;
+    border: 1px dotted #333;
+    background-color: #800;
+    color: #fff;
+}
+.loginGoogle{
+    border-radius: 5px;
+    background-color: #800;
+    color: #fff;
+    border: 1px solid #333;
+    cursor: pointer;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: row;
+}
+.esqueceuSenha{
+    color: #fff;
+    text-decoration: underline;
+    text-align: center;
+}
+.signIn{
+    border-radius: 5px;
+    background-color: #800;
+    color: #fff;
+    border: 1px solid #333;
+    cursor: pointer;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: row;
+}
