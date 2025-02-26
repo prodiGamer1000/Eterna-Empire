@@ -3,16 +3,15 @@
 const sun = document.querySelector('.sun');
 const moon = document.querySelector('.moon');
 const main = document.querySelector('.main');
-const description = document.querySelector('.comunityDesc');
-const title = document.querySelector('.comunityTitle');
-const menuMobile = document.querySelector('.menuMobile');
-const menuMobileOpen = document.querySelector('.menuMobileOpen');
-const sunMobile = document.querySelector('.sunMobile');
-const moonMobile = document.querySelector('.moonMobile');
+const menu = document.querySelector('.menu');
+const menuOpen = document.querySelector('.menuOpen');
+const title = document.querySelector('.title');
+const description = document.querySelector('.description1');
+const descriptionn = document.querySelector('.description2');
+const politicagem = document.querySelector('.politicagem');
 
+let menuPressed = false;
 let theme = "dark";
-let themeMobile = "dark";
-let menuMobilePressed = false;
 
 function toggleTheme() {
     if(theme == "light") {
@@ -43,47 +42,48 @@ function toggleThemeMobile(){
 function themeAlternate(dispositivo){
     if(dispositivo == "mobile"){
         if(themeMobile == "light"){
-            title.style.color = "#000"
-            description.style.backgroundColor = "#ddd";
+            title.style.color = '#000'
             description.style.color = "#000";
+            descriptionn.style.color = "#000";
+            politicagem.style.color = "#000";
             main.style.backgroundColor = "#f2f2f2";
         } else {
-            title.style.color = "#fff"
-            description.style.backgroundColor = "#444";
+            title.style.color = '#fff'
             description.style.color = "#fff";
-            main.style.backgroundColor = "#222";
+            descriptionn.style.color = "#fff";
+            politicagem.style.color = "#fff";
+            main.style.backgroundColor = "#333";
         }
     }else if(dispositivo == "Pc"){
         if(theme == "light"){
-            title.style.color = "#000"
-            description.style.backgroundColor = "#ddd";
+            title.style.color = '#000'
             description.style.color = "#000";
+            descriptionn.style.color = "#000";
+            politicagem.style.color = "#000";
             main.style.backgroundColor = "#f2f2f2";
         } else {
-            title.style.color = "#fff"
-            description.style.backgroundColor = "#444";
+            title.style.color = '#fff'
             description.style.color = "#fff";
-            main.style.backgroundColor = "#222";
+            descriptionn.style.color = "#fff";
+            politicagem.style.color = "#fff";
+            main.style.backgroundColor = "#333";
         }
     }
 }
 
-sun.addEventListener('click', ()=>{toggleTheme();});
+
+
+sun.addEventListener('click', ()=>{toggleTheme()});
 moon.addEventListener('click', ()=>{toggleTheme()});
 
-sunMobile.addEventListener('click', ()=>{toggleThemeMobile()});
-moonMobile.addEventListener('click', ()=>{toggleThemeMobile()});
-
-
-
-menuMobile.addEventListener('click', ()=>{
-    if(menuMobilePressed) {
-        menuMobileOpen.style.display = 'none';
-        menuMobile.style.transform = "rotate(0deg)";
-        menuMobilePressed = false;
+menuOpen.addEventListener('click', ()=>{
+    if(menuPressed) {
+        menu.style.display = 'none';
+        menuOpen.style.transform = "rotate(0deg)";
+        menuPressed = false;
     } else {
-        menuMobileOpen.style.display = 'flex';
-        menuMobile.style.transform = "rotate(90deg)";
-        menuMobilePressed = true;
+        menu.style.display = 'flex';
+        menuOpen.style.transform = "rotate(90deg)";
+        menuPressed = true;
     }
 });

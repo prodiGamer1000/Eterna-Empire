@@ -20,10 +20,12 @@ function toggleTheme() {
         theme = "dark"
         moon.style.display = "none";
         sun.style.display = "block";
+        themeAlternate("Pc")
     } else {
         theme = "light"
         moon.style.display = "block";
         sun.style.display = "none";
+        themeAlternate("Pc")
     }
 } 
 function toggleThemeMobile(){
@@ -31,10 +33,39 @@ function toggleThemeMobile(){
         themeMobile = "dark"
         moonMobile.style.display = "none";
         sunMobile.style.display = "block";
+        themeAlternate("mobile")
     } else {
         themeMobile = "light"
         moonMobile.style.display = "block";
         sunMobile.style.display = "none";
+        themeAlternate("mobile")
+    }
+}
+function themeAlternate(dispositivo){
+    if(dispositivo == "mobile"){
+        if(themeMobile == "light"){
+            title.style.color = "#000"
+            desc.style.backgroundColor = "#ddd";
+            desc.style.color = "#000";
+            main.style.backgroundColor = "#f2f2f2";
+        } else {
+            title.style.color = "#fff"
+            desc.style.backgroundColor = "#444";
+            desc.style.color = "#fff";
+            main.style.backgroundColor = "#222";
+        }
+    }else if(dispositivo == "Pc"){
+        if(theme == "light"){
+            title.style.color = "#000"
+            desc.style.backgroundColor = "#ddd";
+            desc.style.color = "#000";
+            main.style.backgroundColor = "#f2f2f2";
+        } else {
+            title.style.color = "#fff"
+            desc.style.backgroundColor = "#444";
+            desc.style.color = "#fff";
+            main.style.backgroundColor = "#222";
+        }
     }
 }
 
@@ -44,33 +75,6 @@ moon.addEventListener('click', ()=>{toggleTheme()});
 
 sunMobile.addEventListener('click', ()=>{toggleThemeMobile()});
 moonMobile.addEventListener('click', ()=>{toggleThemeMobile()});
-
-setInterval(()=>{
-    if(theme == "light"){
-        title.style.color = "#000"
-        desc.style.backgroundColor = "#ddd";
-        desc.style.color = "#000";
-        main.style.backgroundColor = "#f2f2f2";
-    } else {
-        title.style.color = '#fff'
-        desc.style.backgroundColor = "#444";
-        desc.style.color = "#fff";
-        main.style.backgroundColor = "#222";
-    }
-},50)
-setInterval(()=>{
-    if(themeMobile == "light"){
-        title.style.color = "#000"
-        desc.style.backgroundColor = "#ddd";
-        desc.style.color = "#000";
-        main.style.backgroundColor = "#f2f2f2";
-    } else {
-        title.style.color = "#fff"
-        desc.style.backgroundColor = "#444";
-        desc.style.color = "#fff";
-        main.style.backgroundColor = "#222";
-    }
-},50)
 
 menuMobile.addEventListener('click', ()=>{
     if(menuMobilePressed) {

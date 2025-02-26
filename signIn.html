@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles/login.css">
+    <link rel="stylesheet" href="src/styles/signIn.css">
     <link rel="website icon" href="src/images/icon.png"/>
-    <title>Eterna Empire Login</title>
+    <title>Eterna Empire Sign In</title>
 </head>
 <body>
     <header>
@@ -41,27 +41,44 @@
     </section>
     <main class="main">
         <div class="loginForm">
-            <h1 class="title">Login</h1>
+            <h1 class="title">Sign In</h1>
             <form>
-                <div>
-                    <label class="description1" for="user">Digite Seu Nome de Usuário ou Seu Email:</label>
-                    <input class="caixaDeTexto" type="text" id="user" name="user" required>
+                <div class="leftArea">
+                    <div>
+                        <label class="description1" for="user">Digite Seu Nome de Usuário:</label>
+                        <input type="text" id="user" name="user" required>
+                    </div>
+                    <div>
+                        <label class="description2" for="email">Digite Seu Email:</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <div class="age"><label for="age">Idade: </label><input name="age" class="ageBox" type="number" required min="1" max="120"></div>
+                    <div>
+                        <label class="description3" for="password">Digite Sua Senha:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div>
+                        <label class="description3" for="password">Confirme Sua Senha:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
                 </div>
-                <div>
-                    <label class="description2" for="password">Digite Sua Senha:</label>
-                    <input class="caixaDeTexto" type="password" id="password" name="password" required>
-                </div>                
-                <div>
-                    <a class="esqueceuSenha" href="err.html">Esqueceu a Senha?</a>
-                </div>
-                <div>
-                    <input class="login" type="submit" value="Entrar">
-                </div>
-                <div>
-                    <a class="botao loginGoogle" href="err.html">Entrar com Google <img class="google" src="src/images/google.png"/></a>
-                </div>
-                <div>
-                    <a class="botao signIn" href="signIn.html">Crie uma Conta</a>
+                <div class="rightArea">
+                    <div>
+                        <label for="telefone">Digite seu telefone (opcional)</label>
+                        <input type="tel" id="telefone" name="telefone">
+                    </div>
+                    <div>
+                        <a class="loginGoogle" href="err.html">Entrar com Google <img class="google" src="src/images/google.png"/></a>
+                    </div>                
+                    <div class="politicaPergunta">
+                        <input type="checkbox" required/>Você concorda com a <a class="politicagem" href="err.html">Politica De Privacidade</a>?
+                    </div>
+                    <div>
+                        <input class="signIn" type="submit" value="Criar conta">
+                    </div>
+                    <div>
+                        <a class="login" href="login.html">Já tem uma conta? Faça Login</a>
+                    </div>
                 </div>
             </form>
         </div>
@@ -71,6 +88,6 @@
         <p class="copy">Todos os direitos reservados Copyright ©</p>
     </footer>
 
-    <script src="src/js/login.js"></script>
+    <script src="src/js/signIn.js"></script>
 </body>
 </html>
