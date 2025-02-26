@@ -10,6 +10,7 @@ const moonMobile = document.querySelector('.moonMobile');
 const title = document.querySelector('.wikiTitle');
 const desc = document.querySelector('.wikiDesc');
 
+
 let theme = "dark";
 let themeMobile = "dark";
 let menuMobilePressed = false;
@@ -52,6 +53,19 @@ setInterval(()=>{
         main.style.backgroundColor = "#f2f2f2";
     } else {
         title.style.color = '#fff'
+        desc.style.backgroundColor = "#444";
+        desc.style.color = "#fff";
+        main.style.backgroundColor = "#222";
+    }
+},50)
+setInterval(()=>{
+    if(themeMobile == "light"){
+        title.style.color = "#000"
+        desc.style.backgroundColor = "#ddd";
+        desc.style.color = "#000";
+        main.style.backgroundColor = "#f2f2f2";
+    } else {
+        title.style.color = "#fff"
         desc.style.backgroundColor = "#444";
         desc.style.color = "#fff";
         main.style.backgroundColor = "#222";

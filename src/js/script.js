@@ -1,4 +1,4 @@
-alert("AVISO!! O site ainda está em desenvolvieno, portanto, algumas funções que funcionam em computadores podem não funcionar devidamente em celulares.");
+//alert("AVISO!! O site ainda está em desenvolvieno, portanto, algumas funções que funcionam em computadores podem não funcionar devidamente em celulares.");
 
 const sun = document.querySelector('.sun');
 const moon = document.querySelector('.moon');
@@ -52,6 +52,19 @@ setInterval(()=>{
         main.style.backgroundColor = "#f2f2f2";
     } else {
         title.style.color = '#fff'
+        description.style.backgroundColor = "#444";
+        description.style.color = "#fff";
+        main.style.backgroundColor = "#222";
+    }
+},50)
+setInterval(()=>{
+    if(themeMobile == "light"){
+        title.style.color = "#000"
+        description.style.backgroundColor = "#ddd";
+        description.style.color = "#000";
+        main.style.backgroundColor = "#f2f2f2";
+    } else {
+        title.style.color = "#fff"
         description.style.backgroundColor = "#444";
         description.style.color = "#fff";
         main.style.backgroundColor = "#222";
